@@ -1,7 +1,13 @@
 [package]
 name = "chromapath"
 version = "0.1.0"
-edition = "2024"
+edition = "2025"
+description = "GPU-accelerated path tracer implementing 'Ray Tracing in One Weekend' with CPU, Vulkan compute, and hardware ray tracing backends"
+license = "GPL-3.0"
+repository = "https://github.com/jromang/chromapath"
+readme = "README.md"
+keywords = ["raytracing", "gpu", "vulkan", "path-tracer", "rendering"]
+categories = ["graphics", "multimedia::images"]
 
 [dependencies]
 glam = { version = "0.30", features = ["rand"] }
