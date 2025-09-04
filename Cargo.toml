@@ -1,0 +1,31 @@
+[package]
+name = "chromapath"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+glam = { version = "0.30", features = ["rand"] }
+image = "0.25"
+gltf = "1.4"
+exr = "1.73"
+rand = "0.9"
+rand_chacha = "0.9"
+env_logger = "0.11"
+log = "0.4"
+clap = { version = "4.5", features = ["derive"] }
+tev_client = "0.5"
+indicatif = "0.18"
+rayon = "1.11"
+vulkano = "0.35"
+bytemuck = { version = "1.0", features = ["derive"] }
+smallvec = "1.13"
+
+
+# Optimize for maximum speed in release builds
+[profile.release]
+opt-level = 3           # Maximum optimization level
+lto = "fat"             # Full Link Time Optimization
+codegen-units = 1       # Better optimization at cost of compile time
+panic = "abort"         # Slightly faster (no unwinding overhead)
+debug = false           # Remove debug info for smaller size
+strip = true            # Strip symbols for smaller size (good for UPX)
