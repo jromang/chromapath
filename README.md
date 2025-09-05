@@ -7,10 +7,10 @@ A path tracer implementation in Rust inspired by [Ray Tracing in One Weekend](ht
 ## Features
 
 Three rendering backends producing identical results:
-- **CPU**: Multi-threaded with SIMD optimization (glam)
-- **GPU Compute**: Vulkan compute shaders via Vulkano
-- **Hardware RT**: GPU-accelerated ray tracing with Vulkano RT extensions
-- **Output formats**: PNG and EXR with TEV viewer support
+- **CPU**: Multi-threaded with SIMD optimization via [glam](https://docs.rs/glam/latest/glam/)
+- **GPU Compute**: Vulkan compute shaders via [vulkano](https://github.com/vulkano-rs/vulkano)
+- **Hardware RT**: GPU-accelerated ray tracing with [vulkano](https://github.com/vulkano-rs/vulkano) RT extensions
+- **Output formats**: PNG and EXR with [TEV viewer](https://github.com/Tom94/tev) support
 
 ## Architecture
 
@@ -72,7 +72,7 @@ cargo run --release -- --hardware-rt -s 100 --tev
 ## Next Steps
 
 - Triangle primitive support
-- glTF 2.0 scene loading
+- [glTF 2.0](https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html) scene loading
 
 ## References
 
