@@ -10,7 +10,8 @@ Three rendering backends producing identical results:
 - **CPU**: Multi-threaded with SIMD optimization via [glam](https://docs.rs/glam/latest/glam/)
 - **GPU Compute**: Vulkan compute shaders via [vulkano](https://github.com/vulkano-rs/vulkano)
 - **Hardware RT**: GPU-accelerated ray tracing with [vulkano](https://github.com/vulkano-rs/vulkano) RT extensions
-- **Output formats**: PNG and EXR with [TEV viewer](https://github.com/Tom94/tev) support
+
+Output formats: PNG and EXR with [TEV viewer](https://github.com/Tom94/tev) support
 
 ## Architecture
 
